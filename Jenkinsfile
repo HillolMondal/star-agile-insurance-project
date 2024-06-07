@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('build project'){
             steps{
-                git url:'https://github.com/HillolMondal/star-agile-insurance-project.git/', branch: "master"
+                git url:'https://github.com/HillolMondal/star-agile-insurance-project.git', branch: "master"
                 sh 'mvn clean package'
             }
         }
